@@ -11,10 +11,13 @@ Andy Huynh (Handy Andy)
 Mitchell Johnstone (MJ)
  
 Claire Watson (Watto)
+<<<<<<< HEAD
 
 <<<<<<< HEAD
 It's okay I'll delete it now.
 test
 =======
 Blah blah
+>>>>>>> origin/master
+=======
 >>>>>>> origin/master
