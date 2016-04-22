@@ -12,5 +12,9 @@ Mitchell Johnstone (MJ)
  
 Claire Watson (Watto)
 
+<<<<<<< HEAD
 It's okay I'll delete it now.
 test
+=======
+Blah blah
+>>>>>>> origin/master
