@@ -1,9 +1,13 @@
 LIST OF MEMBERS FOR TEAM 099
  
-Riley Frost
+Riley Frost (Frosty)
  
+<<<<<<< HEAD
 Andy Huynh ==
+=======
+Andy Huynh (Handy Andy)
+>>>>>>> origin/master
  
-Mitchell Johnstone
+Mitchell Johnstone (MJ)
  
-Claire Watson
+Claire Watson (Watto)
