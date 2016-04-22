@@ -6,10 +6,5 @@ Andy Huynh (Handy Andy)
  
 Mitchell Johnstone (MJ)
  
-<<<<<<< HEAD
-Claire Watson
 
-test
-=======
 Claire Watson (Watto)
->>>>>>> origin/master
