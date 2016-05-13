@@ -38,12 +38,19 @@ function LocationWeatherCache()
     // Returns the number of locations stored in the cache.
     //
     this.length = function() {
+        return locations.length
     };
     
     // Returns the location object for a given index.
     // Indexes begin at zero.
     //
     this.locationAtIndex = function(index) {
+          
+        for (var i = 0; i < length; i++)
+            {
+                return location.[i]
+            }
+        
     };
 
     // Given a latitude, longitude and nickname, this method saves a 
@@ -52,6 +59,13 @@ function LocationWeatherCache()
     //
     this.addLocation = function(latitude, longitude, nickname)
     {
+         new locations.push() = {
+            nickname: nickname,
+            latitude: latitude,
+            longitude: longitude,
+            forecasts: ""
+        };
+        return locations.IndexOf
     }
 
     // Removes the saved location at the given index.
