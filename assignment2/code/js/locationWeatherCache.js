@@ -72,6 +72,10 @@ function LocationWeatherCache()
     // 
     this.removeLocationAtIndex = function(index)
     {
+        if (index)
+        {
+         localStorage.removeItem(APP_PREFIX + "-selectedLocation");
+        }
     }
 
     // This method is used by JSON.stringify() to serialise this class.
