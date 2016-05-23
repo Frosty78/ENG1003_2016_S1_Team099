@@ -29,14 +29,26 @@ document.getElementById('address').addEventListener('keypress', function (e) {
 });
 document.getElementById('saveLocationButton').addEventListener('click', function()
 {
-   var pls = JSON.stringify(map.center)
-  localStorage.setItem(APP_PREFIX + "-test", pls)
-   var maybe = localStorage.getItem(APP_PREFIX + "-test", pls)
-   var ty = JSON.parse(maybe)
-   var testpt2 = "https://api.forecast.io/forecast/69cea27469ca4329eb512cdec62eda5b/" + ty.lat + "," + ty.lng + "," + new Date().forecastDateString()
-   console.log(testpt2) 
-   https://api.forecast.io/forecast/69cea27469ca4329eb512cdec62eda5b/-34.397,150.644,2016-05-22T12:00:00?exclude=hourly&callback=this.weatherResponse
+   var coordinatesToJSON = JSON.stringify(map.center);
+  localStorage.setItem(APP_PREFIX + "-test", coordinatesToJSON);
+   var fetchCoordinates = localStorage.getItem(APP_PREFIX + "-test", coordinatesToJSON);
+   var parsedCoordinates = JSON.parse(fetchCoordinates);
+   var weatherURL = "https://api.forecast.io/forecast/69cea27469ca4329eb512cdec62eda5b/" + parsedCoordinates.lat + "," + parsedCoordinates.lng + "," + new Date().forecastDateString() + "?callback=weatherpls";
+  
+    var script = document.createElement('script');
+        script.src = weatherURL;
+        document.body.appendChild(script);
+   
 });
+function weatherpls(weather)
+{
+    var dailyForecast = weather.daily.data[0].humidity;
+    console.log(dailyForecast);
+    var currentWeather = weather.currently.humidity;
+    console.log(currentWeather);
+}
+
+
 
 
 function newValue(value) {
